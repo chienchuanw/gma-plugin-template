@@ -1,0 +1,48 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<LUA_EXPORT table="true">
+    <version number="1.2"/>
+    <golden_samples bool="true"/>   <!--true= gs should be created-->
+    <server bool="true"/>
+    <do_destructive bool="false"/>
+    <ignore table="true">
+        <table_index i="1" string="ASSIGN_DMX"/>
+        <table_index i="2" string="INSERT_DMXSNAPSHOT"/>
+        <table_index i="3" string="MOVE_DMXSNAPSHOT">
+    </ignore>
+    <destructive table="true">
+        <table_index i="1" string="DELETE_CHANNEL"/>
+        <table_index i="2" string="DELETE_DMX"/>
+        <table_index i="3" string="DELETE_DMXUNIVERSE"/>
+        <table_index i="4" string="DELETE_FIXTURE"/>
+        <table_index i="5" string="DELETE_SELECTION"/>
+        <table_index i="6" string="MOVE_DMXUNIVERSE"/>
+        <table_index i="7" string="UPDATE_DMXSNAPSHOT">
+    </destructive>
+    <debug table="true">
+    </debug>
+    <fixture_count table="true">
+        <table_index i="1" integer="2000"/>        <!--amounts of the patched fixtures-->
+        <table_index i="2" integer="2000"/>
+        <table_index i="3" integer="2000"/>
+        <table_index i="4" integer="2000"/>
+    </fixture_count>
+    <fixture_channel_count table="true">
+        <table_index i="1" integer="1"/>
+        <table_index i="2" integer="4"/>
+        <table_index i="3" integer="27"/>
+        <table_index i="4" integer="6"/>
+    </fixture_channel_count>
+    <fixtures table="true">
+        <table_index i="1" string="generic@dimmer@00.xmlp"/>
+        <table_index i="2" string="generic@led_-_rgbw@8_bit.xmlp"/>
+        <table_index i="3" string="varilite@vl1000_as@00.xmlp"/>
+        <table_index i="4" string="ma_lighting@moving_path_translate@.xml"/>
+    </fixtures>
+</LUA_EXPORT>
+
+
+<!-- This file gives the LUA Tests its values for operating -->
+<!-- Here you can find a version, a server flag, a boolean if samlpes will be created or not -->
+<!-- and you can set the fixturetypes and the amount of fixtures that the tests will run with -->
+<!-- For Fixturetypes should ever be a convantional, a LED, a Headmover and a special fixture -->
+<!-- like a translation or a camera used to get the full test range and for future 3D tests-->

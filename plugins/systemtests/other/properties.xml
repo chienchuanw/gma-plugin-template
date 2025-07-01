@@ -1,0 +1,15 @@
+<Prop>
+<version = 1.1>
+<golden_samples = true>
+<fixtures = {"generic@dimmer@00.xmlp","generic@led_-_rgbw@8_bit.xmlp","varilite@vl1000_as@00.xmlp","ma_lighting@moving_path_translate@.xml"}>
+<fixtures_count = {30,20,20,20}>
+<fixtures_channel_count = {1,4,27,6}>
+<server = true>
+<ignore = {"STORE_EFFECT"}>
+</Prop>
+
+<!-- This file gives the LUA Tests its values for operating -->
+<!-- Here you can find a version, a server flag, a boolean if samlpes will be created or not -->
+<!-- and you can set the fixturetypes and the amount of fixtures that the tests will run with -->
+<!-- For Fixturetypes should ever be a convantional, a LED, a Headmover and a special fixture -->
+<!-- like a translation or a camera used to get the full test range and for future 3D tests-->

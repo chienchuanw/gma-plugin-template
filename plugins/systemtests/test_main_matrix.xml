@@ -1,0 +1,407 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<MA xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://schemas.malighting.de/grandma2/xml/MA" xsi:schemaLocation="http://schemas.malighting.de/grandma2/xml/MA http://schemas.malighting.de/grandma2/xml/2.5.93/MA.xsd" major_vers="2" minor_vers="5" stream_vers="93">
+    <Info datetime="2016-04-26T12:00:00" showfile="lua_test" />
+
+    <!--index is not in use-->
+
+    <Plugin index="0"     luafile="test_init_fixtures.lua"          name="ShowfileInit"/>
+
+    <Plugin index="1"     luafile="test_cancel.lua"                 name="Tests|Cancel"/>
+    <Plugin index="2"     luafile="test_main_matrix.lua"            name="Run|Tests"/>
+
+    <Plugin index="3"     luafile="test_agenda_store.lua"           name="Agenda|Store"/>
+    <Plugin index="5"     luafile="test_agenda_agenda.lua"          name="Agenda|Agenda" />
+    <Plugin index="6"     luafile="test_agenda_assign.lua"          name="Agenda|Assign"/>
+    <Plugin index="7"     luafile="test_agenda_copy.lua"            name="Agenda|Copy"/>
+    <Plugin index="4"     luafile="test_agenda_delete.lua"          name="Agenda|Delete"/>
+
+    <Plugin index="8"     luafile="test_channel_delete.lua"          name="Channel|Delete"/>
+    <Plugin index="9"     luafile="test_channel_assign.lua"          name="Channel|Assign"/>
+    <Plugin index="10"    luafile="test_channel_at.lua"             name="Channel|At"/>
+    <Plugin index="11"    luafile="test_channel_clone.lua"          name="Channel|Clone"/>
+    <Plugin index="12"    luafile="test_channel_full.lua"           name="Channel|Full"/>
+    <Plugin index="13"    luafile="test_channel_highlight.lua"      name="Channel|Highlight"/>
+    <Plugin index="14"    luafile="test_channel_off.lua"            name="Channel|Off"/>
+    <Plugin index="15"    luafile="test_channel_on.lua"             name="Channel|On"/>
+    <Plugin index="16"    luafile="test_channel_park.lua"           name="Channel|Park"/>
+    <Plugin index="17"    luafile="test_channel_release.lua"        name="Channel|Release"/>
+    <Plugin index="18"    luafile="test_channel_remove.lua"         name="Channel|Remove"/>
+    <Plugin index="19"    luafile="test_channel_selfix.lua"         name="Channel|SelFix"/>
+    <Plugin index="20"    luafile="test_channel_unpark.lua"         name="Channel|Unpark"/>
+
+    <Plugin index="21"    luafile="test_cue_store.lua"              name="Cue|Store"/>
+    <Plugin index="22"    luafile="test_cue_delete.lua"             name="Cue|Delete"/>
+    <Plugin index="23"    luafile="test_cue_assign.lua"             name="Cue|Assign"/>
+    <Plugin index="24"    luafile="test_cue_at.lua"                 name="Cue|At"/>
+    <Plugin index="25"    luafile="test_cue_call.lua"               name="Cue|Call"/>
+    <Plugin index="26"    luafile="test_cue_copy.lua"               name="Cue|Copy"/>
+    <Plugin index="27"    luafile="test_cue_edit.lua"               name="Cue|Edit"/>
+    <Plugin index="29"    luafile="test_cue_goto.lua"               name="Cue|Goto"/>
+    <Plugin index="31"    luafile="test_cue_load.lua"               name="Cue|Load"/>
+    <Plugin index="32"    luafile="test_cue_move.lua"               name="Cue|Move"/>
+    <Plugin index="33"    luafile="test_cue_on.lua"                 name="Cue|On"/>
+    <Plugin index="34"    luafile="test_cue_park.lua"               name="Cue|Park"/>
+    <Plugin index="35"    luafile="test_cue_release.lua"            name="Cue|Release"/>
+    <Plugin index="36"    luafile="test_cue_remove.lua"             name="Cue|Remove"/>
+    <Plugin index="37"    luafile="test_cue_selfix.lua"             name="Cue|SelFix"/>
+    <Plugin index="38"    luafile="test_cue_unpark.lua"             name="Cue|Unpark"/>
+    <Plugin index="39"    luafile="test_cue_update.lua"             name="Cue|Update"/>
+    <Plugin index="28"    luafile="test_cue_export.lua"             name="Cue|Export"/>
+    <Plugin index="30"    luafile="test_cue_import.lua"             name="Cue|Import"/>
+
+    <Plugin index="40"    luafile="test_cuepart_store.lua"          name="CuePart|Store"/>
+    <Plugin index="41"    luafile="test_cuepart_delete.lua"         name="CuePart|Delete"/>
+    <Plugin index="42"    luafile="test_cuepart_assign.lua"         name="CuePart|Assign"/>
+    <Plugin index="43"    luafile="test_cuepart_at.lua"             name="CuePart|At"/>
+    <Plugin index="44"    luafile="test_cuepart_call.lua"           name="CuePart|Call"/>
+    <Plugin index="45"    luafile="test_cuepart_copy.lua"           name="CuePart|Copy"/>
+    <Plugin index="46"    luafile="test_cuepart_edit.lua"           name="CuePart|Edit"/>
+    <Plugin index="47"    luafile="test_cuepart_move.lua"           name="CuePart|Move"/>
+    <Plugin index="48"    luafile="test_cuepart_on.lua"             name="CuePart|On"/>
+    <Plugin index="49"    luafile="test_cuepart_park.lua"           name="CuePart|Park"/>
+    <Plugin index="50"    luafile="test_cuepart_release.lua"        name="CuePart|Release"/>
+    <Plugin index="51"    luafile="test_cuepart_remove.lua"         name="CuePart|Remove"/>
+    <Plugin index="52"    luafile="test_cuepart_selfix.lua"         name="CuePart|SelFix"/>
+    <Plugin index="53"    luafile="test_cuepart_unpark.lua"         name="CuePart|Unpark"/>
+    <Plugin index="54"    luafile="test_cuepart_update.lua"         name="CuePart|Update"/>
+
+    <Plugin index="55"    luafile="test_dmx_delete.lua"             name="DMX|Delete"/>
+    <Plugin index="56"    luafile="test_dmx_assign.lua"             name="DMX|Assign"/>
+    <Plugin index="57"    luafile="test_dmx_at.lua"                 name="DMX|At"/>
+    <Plugin index="58"    luafile="test_dmx_full.lua"               name="DMX|Full"/>
+    <Plugin index="59"    luafile="test_dmx_off.lua"                name="DMX|Off"/>
+    <Plugin index="60"    luafile="test_dmx_on.lua"                 name="DMX|On"/>
+    <Plugin index="61"    luafile="test_dmx_park.lua"               name="DMX|Park"/>
+    <Plugin index="62"    luafile="test_dmx_selfix.lua"             name="DMX|SelFix"/>
+    <Plugin index="63"    luafile="test_dmx_unpark.lua"             name="DMX|Unpark"/>
+
+    <Plugin index="64"    luafile="test_dmxsnapshot_store.lua"      name="DMXS|Store"/>
+    <Plugin index="65"    luafile="test_dmxsnapshot_delete.lua"     name="DMXS|Delete"/>
+    <Plugin index="66"    luafile="test_dmxsnapshot_copy.lua"       name="DMXS|Copy"/>
+    <Plugin index="67"    luafile="test_dmxsnapshot_insert.lua"     name="DMXS|Insert"/>
+    <Plugin index="68"    luafile="test_dmxsnapshot_move.lua"       name="DMXS|Move"/>
+    <Plugin index="69"    luafile="test_dmxsnapshot_update.lua"     name="DMXS|Update"/>
+
+    <Plugin index="70"    luafile="test_dmxuniverse_delete.lua"     name="DMXU|Delete"/>
+    <Plugin index="71"    luafile="test_dmxuniverse_move.lua"       name="DMXU|Move"/>
+    <Plugin index="72"    luafile="test_dmxuniverse_off.lua"        name="DMXU|Off"/>
+    <Plugin index="73"    luafile="test_dmxuniverse_on.lua"         name="DMXU|On"/>
+    <Plugin index="74"    luafile="test_dmxuniverse_park.lua"       name="DMXU|Park"/>
+    <Plugin index="75"    luafile="test_dmxuniverse_unpark.lua"     name="DMXU|Unpark"/>
+
+    <Plugin index="76"    luafile="test_effect_store.lua"           name="Effect|Store"/>
+    <Plugin index="77"    luafile="test_effect_delete.lua"          name="Effect|Delete"/>
+    <Plugin index="78"    luafile="test_effect_assign.lua"          name="Effect|Assign"/>
+    <Plugin index="79"    luafile="test_effect_at.lua"              name="Effect|At"/>
+    <Plugin index="80"    luafile="test_effect_call.lua"            name="Effect|Call"/>
+    <Plugin index="81"    luafile="test_effect_copy.lua"            name="Effect|Copy"/>
+    <Plugin index="82"    luafile="test_effect_edit.lua"            name="Effect|Edit"/>
+    <Plugin index="84"    luafile="test_effect_go.lua"              name="Effect|Go"/>
+    <Plugin index="85"    luafile="test_effect_goback.lua"          name="Effect|GoBack"/>
+    <Plugin index="87"    luafile="test_effect_insert.lua"          name="Effect|Insert"/>
+    <Plugin index="88"    luafile="test_effect_move.lua"            name="Effect|Move"/>
+    <Plugin index="89"    luafile="test_effect_off.lua"             name="Effect|Off"/>
+    <Plugin index="90"    luafile="test_effect_on.lua"              name="Effect|On"/>
+    <Plugin index="91"    luafile="test_effect_park.lua"            name="Effect|Park"/>
+    <Plugin index="92"    luafile="test_effect_pause.lua"           name="Effect|Pause"/>
+    <Plugin index="93"    luafile="test_effect_release.lua"         name="Effect|Release"/>
+    <Plugin index="94"    luafile="test_effect_remove.lua"          name="Effect|Remove"/>
+    <Plugin index="95"    luafile="test_effect_selfix.lua"          name="Effect|SelFix"/>
+    <Plugin index="96"    luafile="test_effect_toggle.lua"          name="Effect|Toggle"/>
+    <Plugin index="97"    luafile="test_effect_unpark.lua"          name="Effect|Unpark"/>
+    <Plugin index="98"    luafile="test_effect_update.lua"          name="Effect|Update"/>
+    <Plugin index="83"    luafile="test_effect_export.lua"          name="Effect|Export"/>
+    <Plugin index="86"    luafile="test_effect_import.lua"          name="Effect|Import"/>
+
+    <Plugin index="99"    luafile="test_executor_delete.lua"        name="Executor|Delete"/>
+    <Plugin index="100"   luafile="test_executor_store.lua"         name="Executor|Store"/>
+    <Plugin index="101"   luafile="test_executor_assign.lua"        name="Executor|Assign"/>
+    <Plugin index="102"   luafile="test_executor_at.lua"            name="Executor|At"/>
+    <Plugin index="103"   luafile="test_executor_black.lua"         name="Executor|Black"/>
+    <Plugin index="104"   luafile="test_executor_call.lua"          name="Executor|Call"/>
+    <Plugin index="105"   luafile="test_executor_copy.lua"          name="Executor|Copy"/>
+    <Plugin index="108"   luafile="test_executor_fix.lua"           name="Executor|Fix"/>
+    <Plugin index="109"   luafile="test_executor_flash.lua"         name="Executor|Flash"/>
+    <Plugin index="110"   luafile="test_executor_full.lua"          name="Executor|Full"/>
+    <Plugin index="111"   luafile="test_executor_go.lua"            name="Executor|Go"/>
+    <Plugin index="112"   luafile="test_executor_goback.lua"        name="Executor|GoBack"/>
+    <Plugin index="113"   luafile="test_executor_goto.lua"          name="Executor|Goto"/>
+    <Plugin index="115"   luafile="test_executor_kill.lua"          name="Executor|Kill"/>
+    <Plugin index="116"   luafile="test_executor_learn.lua"         name="Executor|Learn"/>
+    <Plugin index="117"   luafile="test_executor_load.lua"          name="Executor|Load"/>
+    <Plugin index="118"   luafile="test_executor_move.lua"          name="Executor|Move"/>
+    <Plugin index="119"   luafile="test_executor_off.lua"           name="Executor|Off"/>
+    <Plugin index="120"   luafile="test_executor_on.lua"            name="Executor|On"/>
+    <Plugin index="121"   luafile="test_executor_park.lua"          name="Executor|Park"/>
+    <Plugin index="122"   luafile="test_executor_pause.lua"         name="Executor|Pause"/>
+    <Plugin index="123"   luafile="test_executor_rate1.lua"         name="Executor|Rate1"/>
+    <Plugin index="124"   luafile="test_executor_release.lua"       name="Executor|Release"/>
+    <Plugin index="125"   luafile="test_executor_remove.lua"        name="Executor|Remove"/>
+    <Plugin index="126"   luafile="test_executor_select.lua"        name="Executor|Select"/>
+    <Plugin index="127"   luafile="test_executor_selfix.lua"        name="Executor|Selfix"/>
+    <Plugin index="128"   luafile="test_executor_skipBw.lua"        name="Executor|SkipBw"/>
+    <Plugin index="129"   luafile="test_executor_skipFw.lua"        name="Executor|SkipFw"/>
+    <Plugin index="130"   luafile="test_executor_temp.lua"          name="Executor|Temp"/>
+    <Plugin index="132"   luafile="test_executor_tofull.lua"        name="Executor|ToFull"/>
+    <Plugin index="131"   luafile="test_executor_toggle.lua"        name="Executor|Toggle"/>
+    <Plugin index="133"   luafile="test_executor_top.lua"           name="Executor|Top"/>
+    <Plugin index="134"   luafile="test_executor_tozero.lua"        name="Executor|ToZero"/>
+    <Plugin index="135"   luafile="test_executor_unpark.lua"        name="Executor|Unpark"/>
+    <Plugin index="136"   luafile="test_executor_update.lua"        name="Executor|Update"/>
+    <Plugin index="107"   luafile="test_executor_export.lua"        name="Executor|Export"/>
+    <Plugin index="114"   luafile="test_executor_import.lua"        name="Executor|Import"/>
+
+    <Plugin index="255"   luafile="test_feature_at.lua"             name="Feature|At"/>
+    <Plugin index="255"   luafile="test_feature_full.lua"           name="Feature|Full"/>
+    <Plugin index="256"   luafile="test_feature_off.lua"            name="Feature|Off"/>
+    <Plugin index="257"   luafile="test_feature_on.lua"             name="Feature|On"/>
+    <Plugin index="258"   luafile="test_feature_park.lua"           name="Feature|Park"/>
+    <Plugin index="259"   luafile="test_feature_unpark.lua"         name="Feature|Unpark"/>
+    <Plugin index="259"   luafile="test_feature_remove.lua"         name="Feature|Remove"/>
+    <Plugin index="255"   luafile="test_feature_export.lua"         name="Feature|Export"/>
+    <Plugin index="255"   luafile="test_feature_import.lua"         name="Feature|Import"/>
+
+    <Plugin index="255"   luafile="test_filter_select.lua"          name="Filter|Select"/>
+
+    <Plugin index="137"   luafile="test_fixture_delete.lua"         name="Fixture|Delete"/>
+    <Plugin index="138"   luafile="test_fixture_assign.lua"         name="Fixture|Assign"/>
+    <Plugin index="139"   luafile="test_fixture_at.lua"             name="Fixture|At"/>
+    <Plugin index="140"   luafile="test_fixture_clone.lua"          name="Fixture|Clone"/>
+    <Plugin index="141"   luafile="test_fixture_full.lua"           name="Fixture|Full"/>
+    <Plugin index="142"   luafile="test_fixture_highlight.lua"      name="Fixture|Highlight"/>
+    <Plugin index="143"   luafile="test_fixture_off.lua"            name="Fixture|Off"/>
+    <Plugin index="144"   luafile="test_fixture_on.lua"             name="Fixture|On"/>
+    <Plugin index="145"   luafile="test_fixture_park.lua"           name="Fixture|Park"/>
+    <Plugin index="146"   luafile="test_fixture_release.lua"        name="Fixture|Release"/>
+    <Plugin index="147"   luafile="test_fixture_remove.lua"         name="Fixture|Remove"/>
+    <Plugin index="148"   luafile="test_fixture_selfix.lua"         name="Fixture|SelFix"/>
+    <Plugin index="149"   luafile="test_fixture_unpark.lua"         name="Fixture|Unpark"/>
+
+    <Plugin index="150"   luafile="test_group_store.lua"            name="Group|Store"/>
+    <Plugin index="151"   luafile="test_group_delete.lua"           name="Group|Delete"/>
+    <Plugin index="152"   luafile="test_group_assign.lua"           name="Group|Assign"/>
+    <Plugin index="153"   luafile="test_group_at.lua"               name="Group|At"/>
+    <Plugin index="154"   luafile="test_group_clone.lua"            name="Group|Clone"/>
+    <Plugin index="155"   luafile="test_group_copy.lua"             name="Group|Copy"/>
+    <Plugin index="157"   luafile="test_group_edit.lua"             name="Group|Edit"/>
+    <Plugin index="156"   luafile="test_group_full.lua"             name="Group|Full"/>
+    <Plugin index="158"   luafile="test_group_insert.lua"           name="Group|Insert"/>
+    <Plugin index="159"   luafile="test_group_move.lua"             name="Group|Move"/>
+    <Plugin index="160"   luafile="test_group_off.lua"              name="Group|Off"/>
+    <Plugin index="161"   luafile="test_group_park.lua"             name="Group|Park"/>
+    <Plugin index="162"   luafile="test_group_release.lua"          name="Group|Release"/>
+    <Plugin index="163"   luafile="test_group_remove.lua"           name="Group|Remove"/>
+    <Plugin index="164"   luafile="test_group_selfix.lua"           name="Group|SelFix"/>
+    <Plugin index="165"   luafile="test_group_tofull.lua"           name="Group|ToFull"/>
+    <Plugin index="166"   luafile="test_group_tozero.lua"           name="Group|ToZero"/>
+    <Plugin index="167"   luafile="test_group_unpark.lua"           name="Group|Unpark"/>
+   <Plugin index="168"   luafile="test_group_update.lua"           name="Group|Update"/>
+    <Plugin index="169"   luafile="test_group_export.lua"           name="Group|Export"/>
+    <Plugin index="170"   luafile="test_group_import.lua"           name="Group|Import"/>
+
+    <Plugin index="171"   luafile="test_layout_store.lua"           name="Layout|Store"/>
+    <Plugin index="172"   luafile="test_layout_delete.lua"          name="Layout|Delete"/>
+    <Plugin index="171"   luafile="test_layout_assign.lua"          name="Layout|Assign"/>
+    <Plugin index="173"   luafile="test_layout_clone.lua"           name="Layout|Clone"/>
+    <Plugin index="174"   luafile="test_layout_copy.lua"            name="Layout|Copy"/>
+    <Plugin index="175"   luafile="test_layout_edit.lua"            name="Layout|Edit"/>
+    <Plugin index="171"   luafile="test_layout_insert.lua"          name="Layout|Insert"/>
+    <Plugin index="176"   luafile="test_layout_move.lua"            name="Layout|Move"/>
+    <Plugin index="171"   luafile="test_layout_off.lua"             name="Layout|Off"/>
+    <Plugin index="171"   luafile="test_layout_on.lua"              name="Layout|On"/>
+    <Plugin index="171"   luafile="test_layout_park.lua"            name="Layout|Park"/>
+    <Plugin index="171"   luafile="test_layout_select.lua"          name="Layout|Select"/>
+    <Plugin index="171"   luafile="test_layout_selfix.lua"          name="Layout|SelFix"/>
+    <Plugin index="171"   luafile="test_layout_unpark.lua"          name="Layout|Unpark"/>
+    <Plugin index="177"   luafile="test_layout_update.lua"          name="Layout|Update"/>
+    <Plugin index="171"   luafile="test_layout_export.lua"          name="Layout|Export"/>
+    <Plugin index="171"   luafile="test_layout_import.lua"          name="Layout|Import"/>
+    <!--
+    <Plugin index="178"   luafile="test_mask_export.lua"            name="Mask|Export"/>
+    <Plugin index="179"   luafile="test_mask_import.lua"            name="Mask|Import"/>  -->
+
+    <Plugin index="180"   luafile="test_macro_store.lua"            name="Macro|Store"/>
+    <Plugin index="181"   luafile="test_macro_delete.lua"           name="Macro|Delete"/>
+    <Plugin index="185"   luafile="test_macro_assign.lua"           name="Macro|Assign"/>
+    <Plugin index="192"   luafile="test_macro_call.lua"             name="Macro|Call"/>
+    <Plugin index="182"   luafile="test_macro_copy.lua"             name="Macro|Copy"/>
+    <Plugin index="182"   luafile="test_macro_go.lua"               name="Macro|Go"/>
+    <Plugin index="182"   luafile="test_macro_goto.lua"             name="Macro|GoTo"/>
+    <Plugin index="182"   luafile="test_macro_goback.lua"           name="Macro|GoBack"/>
+    <Plugin index="182"   luafile="test_macro_insert.lua"           name="Macro|Insert"/>
+    <Plugin index="185"   luafile="test_macro_move.lua"             name="Macro|Move"/>
+    <Plugin index="185"   luafile="test_macro_off.lua"              name="Macro|Off"/>
+    <Plugin index="185"   luafile="test_macro_on.lua"               name="Macro|On"/>
+    <Plugin index="185"   luafile="test_macro_pause.lua"            name="Macro|Pause"/>
+    <Plugin index="185"   luafile="test_macro_skipbwd.lua"          name="Macro|SkipBwd"/>
+    <Plugin index="185"   luafile="test_macro_skipfwd.lua"          name="Macro|SkipFwd"/>
+    <Plugin index="185"   luafile="test_macro_top.lua"              name="Macro|Top"/>
+    <Plugin index="183"   luafile="test_macro_export.lua"           name="Macro|Export"/>
+    <Plugin index="184"   luafile="test_macro_import.lua"           name="Macro|Import"/>
+    <Plugin index="181"   luafile="test_macro_edit.lua"             name="Macro|Edit"/>
+
+    <Plugin index="186"   luafile="test_page_copy.lua"              name="Page|Copy"/>
+    <Plugin index="186"   luafile="test_page_delete.lua"            name="Page|Delete"/>
+    <Plugin index="186"   luafile="test_page_export.lua"            name="Page|Export"/>
+    <Plugin index="186"   luafile="test_page_fix.lua"               name="Page|Fix"/>
+    <Plugin index="186"   luafile="test_page_flash.lua"             name="Page|Flash"/>
+    <Plugin index="186"   luafile="test_page_go.lua"                name="Page|Go"/>
+    <Plugin index="186"   luafile="test_page_goback.lua"            name="Page|Goback"/>
+    <Plugin index="186"   luafile="test_page_import.lua"            name="Page|Import"/>
+    <Plugin index="186"   luafile="test_page_insert.lua"            name="Page|Insert"/>
+    <Plugin index="186"   luafile="test_page_kill.lua"              name="Page|Kill"/>
+    <Plugin index="186"   luafile="test_page_learn.lua"             name="Page|Learn"/>
+    <Plugin index="186"   luafile="test_page_move.lua"              name="Page|Move"/>
+    <Plugin index="186"   luafile="test_page_off.lua"               name="Page|Off"/>
+    <Plugin index="186"   luafile="test_page_on.lua"                name="Page|On"/>
+    <Plugin index="186"   luafile="test_page_pause.lua"             name="Page|Pause"/>
+    <Plugin index="186"   luafile="test_page_rate1.lua"             name="Page|Rate1"/>
+    <Plugin index="186"   luafile="test_page_store.lua"             name="Page|Store"/>
+    <Plugin index="186"   luafile="test_page_temp.lua"              name="Page|Temp"/>
+    <Plugin index="186"   luafile="test_page_toggle.lua"            name="Page|Toggle"/>
+    <Plugin index="186"   luafile="test_page_top.lua"               name="Page|Top"/>
+
+    <Plugin index="186"   luafile="test_plugin_export.lua"          name="Plugin|Export"/>
+    <Plugin index="187"   luafile="test_plugin_import.lua"          name="Plugin|Import"/>
+
+    <Plugin index="188"   luafile="test_preset_store.lua"           name="Preset|Store"/>
+    <Plugin index="189"   luafile="test_preset_delete.lua"          name="Preset|Delete" />
+    <Plugin index="190"   luafile="test_preset_assign.lua"          name="Preset|Assign"/>
+    <Plugin index="191"   luafile="test_preset_at.lua"              name="Preset|At"/>
+    <Plugin index="192"   luafile="test_preset_call.lua"            name="Preset|Call"/>
+    <Plugin index="194"   luafile="test_preset_copy.lua"            name="Preset|Copy"/>
+    <Plugin index="195"   luafile="test_preset_edit.lua"            name="Preset|Edit"/>
+    <Plugin index="196"   luafile="test_preset_insert.lua"          name="Preset|Insert"/>
+    <Plugin index="197"   luafile="test_preset_move.lua"            name="Preset|Move"/>
+    <Plugin index="198"   luafile="test_preset_off.lua"             name="Preset|Off"/>
+    <Plugin index="199"   luafile="test_preset_selfix.lua"          name="Preset|SelFix"/>
+    <Plugin index="200"   luafile="test_preset_update.lua"          name="Preset|Update"/>
+    <Plugin index="201"   luafile="test_preset_export.lua"          name="Preset|Export"/>
+    <Plugin index="202"   luafile="test_preset_import.lua"          name="Preset|Import"/>
+
+    <Plugin index="202"   luafile="test_presettype_at.lua"          name="Presettype|At"/>
+    <Plugin index="202"   luafile="test_presettype_full.lua"        name="Presettype|Full"/>
+    <Plugin index="202"   luafile="test_presettype_off.lua"         name="Presettype|Off"/>
+    <Plugin index="202"   luafile="test_presettype_on.lua"          name="Presettype|On"/>
+    <Plugin index="202"   luafile="test_presettype_park.lua"        name="Presettype|Park"/>
+    <Plugin index="202"   luafile="test_presettype_release.lua"     name="Presettype|Release"/>
+    <Plugin index="202"   luafile="test_presettype_remove.lua"      name="Presettype|Remove"/>
+    <Plugin index="202"   luafile="test_presettype_unpark.lua"      name="Presettype|Unpark"/>
+
+    <Plugin index="202"   luafile="test_screen_copy.lua"            name="Screen|Copy"/>
+    <Plugin index="202"   luafile="test_screen_delete.lua"          name="Screen|Delete"/>
+    <Plugin index="202"   luafile="test_screen_move.lua"            name="Screen|Move"/>
+    <Plugin index="202"   luafile="test_screen_import.lua"          name="Screen|Import"/>
+    <Plugin index="202"   luafile="test_screen_export.lua"          name="Screen|Export"/>
+
+    <Plugin index="203"   luafile="test_selection_at.lua"           name="Selection|At"/>
+    <Plugin index="204"   luafile="test_selection_clone.lua"        name="Selection|Clone"/>
+    <Plugin index="205"   luafile="test_selection_delete.lua"       name="Selection|Delete"/>
+    <Plugin index="206"   luafile="test_selection_full.lua"         name="Selection|Full"/>
+    <Plugin index="207"   luafile="test_selection_highlight.lua"    name="Selection|Highlight"/>
+    <Plugin index="208"   luafile="test_selection_off.lua"          name="Selection|Off"/>
+    <Plugin index="209"   luafile="test_selection_on.lua"           name="Selection|On"/>
+    <Plugin index="210"   luafile="test_selection_oops.lua"         name="Selection|Oops"/>
+    <Plugin index="211"   luafile="test_selection_park.lua"         name="Selection|Park"/>
+    <Plugin index="212"   luafile="test_selection_release.lua"      name="Selection|Release"/>
+    <Plugin index="213"   luafile="test_selection_remove.lua"       name="Selection|Remove"/>
+    <Plugin index="214"   luafile="test_selection_solo.lua"         name="Selection|Solo"/>
+    <Plugin index="215"   luafile="test_selection_unpark.lua"       name="Selection|Unpark"/>
+
+    <Plugin index="216"   luafile="test_sequence_store.lua"         name="Sequence|Store"/>
+    <Plugin index="217"   luafile="test_sequence_delete.lua"        name="Sequence|Delete"/>
+    <Plugin index="218"   luafile="test_sequence_assign.lua"        name="Sequence|Assign"/>
+    <Plugin index="219"   luafile="test_sequence_at.lua"            name="Sequence|At"/>
+    <Plugin index="220"   luafile="test_sequence_call.lua"          name="Sequence|Call"/>
+    <Plugin index="221"   luafile="test_sequence_copy.lua"          name="Sequence|Copy"/>
+    <Plugin index="224"   luafile="test_sequence_go.lua"            name="Sequence|Go"/>
+    <Plugin index="225"   luafile="test_sequence_goback.lua"        name="Sequence|GoBack"/>
+    <Plugin index="226"   luafile="test_sequence_goto.lua"          name="Sequence|Goto"/>
+    <Plugin index="228"   luafile="test_sequence_insert.lua"        name="Sequence|Insert"/>
+    <Plugin index="229"   luafile="test_sequence_move.lua"          name="Sequence|Move"/>
+    <Plugin index="230"   luafile="test_sequence_off.lua"           name="Sequence|Off"/>
+    <Plugin index="231"   luafile="test_sequence_park.lua"          name="Sequence|Park"/>
+    <Plugin index="232"   luafile="test_sequence_pause.lua"         name="Sequence|Pause"/>
+    <Plugin index="233"   luafile="test_sequence_release.lua"       name="Sequence|Release"/>
+    <Plugin index="234"   luafile="test_sequence_remove.lua"        name="Sequence|Remove"/>
+    <Plugin index="235"   luafile="test_sequence_selfix.lua"        name="Sequence|SelFix"/>
+    <Plugin index="236"   luafile="test_sequence_unpark.lua"        name="Sequence|Unpark"/>
+    <Plugin index="237"   luafile="test_sequence_update.lua"        name="Sequence|Update"/>
+    <Plugin index="223"   luafile="test_sequence_export.lua"        name="Sequence|Export"/>
+    <Plugin index="227"   luafile="test_sequence_import.lua"        name="Sequence|Import"/>
+
+    <Plugin index="227"   luafile="test_specialmaster_assign.lua"   name="Specialmaster|Assign"/>
+    <Plugin index="227"   luafile="test_specialmaster_at.lua"       name="Specialmaster|At"/>
+    <Plugin index="227"   luafile="test_specialmaster_black.lua"    name="Specialmaster|Black"/>
+    <Plugin index="227"   luafile="test_specialmaster_flash.lua"    name="Specialmaster|Flash"/>
+    <Plugin index="227"   luafile="test_specialmaster_full.lua"     name="Specialmaster|Full"/>
+    <Plugin index="227"   luafile="test_specialmaster_learn.lua"    name="Specialmaster|Learn"/>
+    <Plugin index="227"   luafile="test_specialmaster_off.lua"      name="Specialmaster|Off"/>
+    <Plugin index="227"   luafile="test_specialmaster_on.lua"       name="Specialmaster|On"/>
+    <Plugin index="227"   luafile="test_specialmaster_rate1.lua"    name="Specialmaster|Rate1"/>
+    <Plugin index="227"   luafile="test_specialmaster_tofull.lua"   name="Specialmaster|ToFull"/>
+    <Plugin index="227"   luafile="test_specialmaster_tozero.lua"   name="Specialmaster|ToZero"/>
+
+    <Plugin index="227"   luafile="test_timecode_copy.lua"          name="Timecode|Copy"/>
+    <Plugin index="227"   luafile="test_timecode_delete.lua"        name="Timecode|Delete"/>
+    <Plugin index="227"   luafile="test_timecode_export.lua"        name="Timecode|Export"/>
+    <Plugin index="227"   luafile="test_timecode_go.lua"            name="Timecode|Go"/>
+    <Plugin index="227"   luafile="test_timecode_import.lua"        name="Timecode|Import"/>
+    <Plugin index="227"   luafile="test_timecode_insert.lua"        name="Timecode|Insert"/>
+    <Plugin index="227"   luafile="test_timecode_move.lua"          name="Timecode|Move"/>
+    <Plugin index="227"   luafile="test_timecode_off.lua"           name="Timecode|Off"/>
+    <Plugin index="227"   luafile="test_timecode_on.lua"            name="Timecode|On"/>
+    <Plugin index="227"   luafile="test_timecode_pause.lua"         name="Timecode|Pause"/>
+    <Plugin index="227"   luafile="test_timecode_select.lua"        name="Timecode|Select"/>
+    <Plugin index="227"   luafile="test_timecode_skipbw.lua"        name="Timecode|SkipBw"/>
+    <Plugin index="227"   luafile="test_timecode_skipfw.lua"        name="Timecode|SkipFw"/>
+    <Plugin index="227"   luafile="test_timecode_store.lua"         name="Timecode|Store"/>
+    <Plugin index="227"   luafile="test_timecode_toggle.lua"        name="Timecode|Toggle"/>
+    <Plugin index="227"   luafile="test_timecode_top.lua"           name="Timecode|Top"/>
+
+    <Plugin index="227"   luafile="test_userprofile_assign.lua"     name="Userprofile|Assign"/>
+    <Plugin index="227"   luafile="test_userprofile_copy.lua"       name="Userprofile|Copy"/>
+    <Plugin index="227"   luafile="test_userprofile_delete.lua"     name="Userprofile|Delete"/>
+    <Plugin index="227"   luafile="test_userprofile_export.lua"     name="Userprofile|Export"/>
+    <Plugin index="227"   luafile="test_userprofile_import.lua"     name="Userprofile|Import"/>
+    <Plugin index="227"   luafile="test_userprofile_move.lua"       name="Userprofile|Move"/>
+    <Plugin index="227"   luafile="test_userprofile_store.lua"      name="Userprofile|Store"/>
+
+    <Plugin index="242"   luafile="test_world_store.lua"            name="World|Store"/>
+    <Plugin index="243"   luafile="test_world_delete.lua"           name="World|Delete"/>
+    <Plugin index="244"   luafile="test_world_call.lua"             name="World|Call"/>
+    <Plugin index="245"   luafile="test_world_copy.lua"             name="World|Copy"/>
+    <Plugin index="246"   luafile="test_world_edit.lua"             name="World|Edit"/>
+    <Plugin index="247"   luafile="test_world_full.lua"             name="World|Full"/>
+    <Plugin index="248"   luafile="test_world_insert.lua"           name="World|Insert"/>
+    <Plugin index="249"   luafile="test_world_move.lua"             name="World|Move"/>
+    <Plugin index="250"   luafile="test_world_release.lua"          name="World|Release"/>
+    <Plugin index="251"   luafile="test_world_remove.lua"           name="World|Remove"/>
+    <Plugin index="253"   luafile="test_world_export.lua"           name="World|Export"/>
+    <Plugin index="254"   luafile="test_world_import.lua"           name="World|Import"/>
+
+    <Plugin index="238"   luafile="test_view_assign.lua"            name="View|Assign"/>
+    <Plugin index="238"   luafile="test_view_call.lua"              name="View|Call"/>
+    <Plugin index="238"   luafile="test_view_delete.lua"            name="View|Delete"/>
+    <Plugin index="238"   luafile="test_view_export.lua"            name="View|Export"/>
+    <Plugin index="238"   luafile="test_view_import.lua"            name="View|Import"/>
+    <Plugin index="238"   luafile="test_view_insert.lua"            name="View|Insert"/>
+    <Plugin index="239"   luafile="test_view_store.lua"             name="View|Store"/>
+    <Plugin index="240"   luafile="test_view_copy.lua"              name="View|Copy"/>
+    <Plugin index="241"   luafile="test_view_move.lua"              name="View|Move"/>
+
+    <Plugin index="241"   luafile="test_viewbutton_call.lua"        name="Viewbutton|Call"/>
+    <Plugin index="241"   luafile="test_viewbutton_copy.lua"        name="Viewbutton|Copy"/>
+    <Plugin index="241"   luafile="test_viewbutton_delete.lua"      name="Viewbutton|Delete"/>
+    <Plugin index="241"   luafile="test_viewbutton_export.lua"      name="Viewbutton|Export"/>
+    <Plugin index="241"   luafile="test_viewbutton_import.lua"      name="Viewbutton|Import"/>
+    <Plugin index="241"   luafile="test_viewbutton_move.lua"        name="Viewbutton|Move"/>
+    <Plugin index="241"   luafile="test_viewbutton_store.lua"       name="Viewbutton|Store"/>
+
+    <Plugin index="241"   luafile="test_viewpage_call.lua"          name="Viewpage|Call"/>
+    <Plugin index="241"   luafile="test_viewpage_copy.lua"          name="Viewpage|Copy"/>
+    <Plugin index="241"   luafile="test_viewpage_export.lua"        name="Viewpage|Export"/>
+    <Plugin index="241"   luafile="test_viewpage_import.lua"        name="Viewpage|Import"/>
+
+    <Plugin index="260"   luafile="generate_import_files.lua"       name="Gen Importfiles"/>
+</MA>
