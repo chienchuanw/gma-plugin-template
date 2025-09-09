@@ -4,8 +4,9 @@
 
 ```makefile
 .
-├── custom-plugins  # 燈光設計師社群自己開發的 plugin
-└── plugins         # grandMA2 官方 plugin
+├── docs              # Lua 教學文件
+├── custom-plugins    # 燈光設計師社群自己開發的 plugin
+└── plugins           # grandMA2 官方 plugin
     ├── requirements
     │   └── socket
     └── systemtests
